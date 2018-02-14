@@ -205,8 +205,8 @@ table {
 }
 
 #bar_text {
-  -webkit-animation: bar_text-reveal 0.6s 0.8s ease-out both, bar_text-move 0.8s 1.4s ease-in-out forwards;
-  animation: bar_text-reveal 0.6s 0.8s ease-out both, bar_text-move 0.8s 1.4s ease-in-out forwards;
+  -webkit-animation: bar_text-reveal 0.6s 0.8s ease-out both, bar_text-move 0.83s 1.4s ease-in-out forwards;
+  animation: bar_text-reveal 0.6s 0.8s ease-out both, bar_text-move 0.83s 1.4s ease-in-out forwards;
 }
 
 #revealtext {
