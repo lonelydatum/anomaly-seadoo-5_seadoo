@@ -210,8 +210,8 @@ table {
 }
 
 #revealtext {
-  -webkit-animation: revealText 0.8s 1.4s ease-in-out forwards;
-  animation: revealText 0.8s 1.4s ease-in-out forwards;
+  -webkit-animation: revealText 0.77s 1.4s ease-in-out forwards;
+  animation: revealText 0.77s 1.4s ease-in-out forwards;
 }
 
 #seadoo {

@@ -15,7 +15,7 @@ $frame1: $start + $reveal + 0.8s;
 }
 
 #revealtext {
-    @include animation(revealText 0.8s $start+.6s ease-in-out forwards);
+    @include animation(revealText 0.77s $start+.6s ease-in-out forwards);
 }
 
 #seadoo{
