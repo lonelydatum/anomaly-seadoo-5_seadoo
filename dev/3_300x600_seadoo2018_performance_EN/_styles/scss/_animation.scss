@@ -1,0 +1,32 @@
+@import './_keyframes.scss';
+
+$reveal : .8s;
+
+$logo : 0.7s;
+
+$start: $logo - .2s;
+
+$frame1: $start + $reveal + 0.8s;
+
+#background{
+    @include animation(background 0.9s 0s ease-in-out both)
+}
+
+#logo {
+    @include animation(logo 0.4s $logo ease-out both)
+}
+#bar_text {
+    @include animation(bar_text-reveal 0.6s $start ease-out both, bar_text-move 0.6s $start+.6s ease-in-out forwards);
+}
+
+#revealtext {
+    @include animation(revealText 0.6s $start+.6s ease-in-out forwards);
+}
+
+#seadoo{
+    @include animation( slow-shake 10s 0s ease-in-out forwards );
+}
+
+#cta{
+    @include animation(fadeIn 0.4s $frame1 ease-in-out both)
+}
