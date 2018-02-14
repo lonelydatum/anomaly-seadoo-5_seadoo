@@ -1,0 +1,39 @@
+@import "_keyframes";
+
+$reveal: .8s;
+
+$logo: 0.2s;
+
+$start: $logo + .8s;
+
+$frame1: $start + $reveal + .8s;
+
+$frame2: $frame1 + .6s;
+
+#logo {
+    @include animation(logo 0.4s $logo ease-out both)
+}
+
+#background1 {
+    @include animation(background1 7.5s 0s linear both)
+}
+
+#background {
+    @include animation(fadeIn 1.6s $start ease-in-out both)
+}
+
+#text {
+    @include animation(fadeIn 1.6s $start ease-out both)
+}
+
+#text_2 {
+    @include animation(text_2 1.2s $start+.4s ease-out both)
+}
+
+#cta {
+    @include animation(fadeIn 0.4s $frame2 ease-in-out both)
+}
+
+#shadow {
+    @include animation(shadow 0.4s ($frame1 - 0.2s) ease-in both, shadowBack 0.4s ($frame1 + .6s) ease-out forwards)
+}
