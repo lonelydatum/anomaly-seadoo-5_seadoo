@@ -1,0 +1,34 @@
+@import "_keyframes";
+
+$reveal: .8s;
+$slideSpeed: 0.3s;
+
+$logo: 0.2s;
+
+$start: $logo + .6s;
+
+$frame1: $start + $reveal;
+$frame2: $frame1 + $reveal + .4s;
+
+#logo {
+    @include animation(logo 0.4s $logo ease-out both)
+}
+
+#revealtext {
+    @include animation(revealText 0.8s $start ease-out both)
+}
+
+#line-2 {
+    @include animation(
+                    slideIn $slideSpeed $frame1 ease-in-out both,
+                    revealLine .5s $frame1+.6s ease-in-out both
+    )
+}
+
+#price-2 {
+    @include animation(revealPrice .5s $frame1+.6s ease-in-out both)
+}
+
+#cta {
+    @include animation(fadeIn 0.4s $frame2 ease-in-out both)
+}

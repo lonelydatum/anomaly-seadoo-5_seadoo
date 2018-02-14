@@ -1,0 +1,85 @@
+@import "../_includes/animation.helpers";
+@import "../_includes/app.reset";
+@import "_animation";
+
+body {
+    -webkit-transform: rotateZ(0deg);
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#content {
+    position: absolute;
+    @include format(160, 600, #000);
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    
+    #clicktag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+    * {
+        position: absolute;
+    }
+    
+    #background {
+    }
+    #seadoo {
+        left:-2px;
+        bottom: 0;
+        -webkit-transform-origin: 30% 50%;
+        transform-origin: 30% 50%;
+    }
+    #revealtext {
+        top: 47px;
+        right: 7px;
+        height: 99px;
+        overflow: hidden;
+    }
+    #text {
+        right: 0;
+    }
+    #bar_text {
+        
+        top: 48px;
+        left: 148px;
+        background: #00aa90;
+    }
+    #logo {
+        top: 528px;
+        left: 18px;
+    }
+    
+    &:hover {
+        #cta {
+            background-color: #fff;
+            background-image: url("cta_hover.png");
+        }
+    }
+    
+    #cta {
+        
+        top: 460px;
+        left: 9px;
+        width: 140px;
+        height: 37px;
+        background-color: #00aa90;
+        background-image: url('cta.png');
+        background-position: 16px 10px;
+        background-repeat: no-repeat;
+        border-radius: 1px;
+    }
+}
