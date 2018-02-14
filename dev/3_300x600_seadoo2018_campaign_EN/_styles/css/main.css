@@ -308,4 +308,16 @@ body {
   border-radius: 1px;
 }
 
+#content #logo {
+  top: 528px;
+  left: 12px;
+}
+
+#content #cta {
+  top: 527px;
+  left: 165px;
+  width: 117px;
+  height: 29px;
+}
+
 /*# sourceMappingURL=main.css.map */
