@@ -1,0 +1,73 @@
+@import '../../../_common/styles/_animation.helpers.scss';
+
+$deplacement: -235px;
+
+@include keyframe(logo) {
+    0% {
+        opacity: 0;
+        @include transform(scale(0.9))
+    }
+    100% {
+        opacity: 1;
+        @include transform(scale(1))
+    }
+}
+
+@include keyframe(fadeIn) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframe(bar_text-reveal) {
+    0% {
+        width: 0;
+        height: 4px;
+    }
+    20% {
+        width: 5px;
+        height: 4px;
+    }
+    100% {
+        width: 5px;
+        height: 158px;
+    }
+}
+
+@include keyframe(bar_text-move) {
+    0% {
+        @include transform(translateX(0));
+    }
+    100% {
+        @include transform(translateX($deplacement));
+    }
+}
+
+@include keyframe(revealText) {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 268px;
+    }
+}
+
+
+@include keyframe(slow-shake){
+    25%{
+        @include transform(translate(-3px,-2px) rotate(-0.15deg));
+    }
+    50%{
+        @include transform(translate(2px,1px) rotate(0deg));
+    }
+    75%{
+        @include transform(translate(-2px,-2px) rotate(-0.15deg));
+    }
+    100%{
+        @include transform(translate(0,0) rotate(0deg));
+    }
+    
+}
