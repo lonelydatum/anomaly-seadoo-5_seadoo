@@ -1,0 +1,74 @@
+@import '../../../_common/styles/_animation.helpers.scss';
+
+$deplacement: -260px;
+$priceHeight: 68px;
+
+
+@include keyframe(logo) {
+    0% {
+        opacity: 0;
+        @include transform(scale(0.9))
+    }
+    100% {
+        opacity: 1;
+        @include transform(scale(1))
+    }
+}
+
+@include keyframe(fadeIn) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframe(slideDown) {
+    0% {
+        @include transform(translateY(-150px))
+    }
+    100% {
+        @include transform(translateY(0))
+    }
+}
+
+
+
+@include keyframe(slideIn) {
+    0% {
+        @include transform(translateX(-260px));
+    }
+    100% {
+        @include transform(translateX(0px));
+    }
+}
+
+
+
+@include keyframe(revealText) {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@include keyframe(revealPrice) {
+    0% {
+        height: 2px;
+    }
+    100% {
+        height: $priceHeight;
+    }
+}
+
+@include keyframe(revealLine) {
+    0% {
+        height: 2px;
+    }
+    100% {
+        height: $priceHeight;
+    }
+}
