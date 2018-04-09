@@ -226,7 +226,7 @@ body {
     height: 29px;
     background-color: #00aa90;
     background-image: url("cta.png");
-    background-position: 0px -2px;
+    background-position: 0px -2px !important;
     background-repeat: no-repeat;
     border-radius: 1px; }
   #content #shadow {
