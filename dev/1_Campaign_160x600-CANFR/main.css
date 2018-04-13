@@ -79,7 +79,7 @@ table {
     height: 4px; }
   100% {
     width: 5px;
-    height: 158px; } }
+    height: 125px; } }
 @keyframes bar_text-reveal {
   0% {
     width: 0;
@@ -89,7 +89,7 @@ table {
     height: 4px; }
   100% {
     width: 5px;
-    height: 158px; } }
+    height: 125px; } }
 @-webkit-keyframes bar_text-move {
   0% {
     -webkit-transform: translateX(0);
@@ -206,7 +206,7 @@ body {
   #content #text {
     right: 0; }
   #content #bar_text {
-    top: 48px;
+    top: 64px;
     left: 138px;
     background: #00aa90; }
   #content #logo {
