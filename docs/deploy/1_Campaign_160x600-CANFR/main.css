@@ -221,8 +221,7 @@ body {
     width: 140px;
     height: 43px;
     background-color: #00aa90;
-    background-image: url("cta.png");
-    background-position: 16px 10px;
+    background-image: url("cta.png");    
     background-repeat: no-repeat;
     background-size: 100% !important;
     border-radius: 1px; }
